@@ -1,12 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { View, Text } from "react-native";
 import AppStackScreen from "./src/stacks/AppStackScreen";
+import SignInScreen from "./src/screens/SignInScreen";
 
-export default App = () => {
+export default function App() {
   return (
     <NavigationContainer>
-      <AppStackScreen />
+      <SignInScreen />
     </NavigationContainer>
   );
-};
+}

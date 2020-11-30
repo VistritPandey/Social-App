@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import SignInScreen from "../screens/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen";
+
 export default AuthStackScreen = () => {
   const AuthStack = createStackNavigator();
   return (
