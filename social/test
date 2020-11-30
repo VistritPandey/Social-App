@@ -1,0 +1,6 @@
+import react from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+export default App = () => {
+  return <NavigationContainer></NavigationContainer>;
+};
