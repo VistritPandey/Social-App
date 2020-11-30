@@ -1,7 +1,8 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import styled from "styled-components";
 
-export default function SignInScreen() {
+export default SignInScreen = () => {
   return (
     <Container>
       <Main></Main>
@@ -9,9 +10,10 @@ export default function SignInScreen() {
         <RightCircle />
         <LeftCircle />
       </HeaderGraphic>
+      <StatusBar barStyle="light-content" />
     </Container>
   );
-}
+};
 
 const Container = styled.View`
   flex: 1;
@@ -19,7 +21,15 @@ const Container = styled.View`
 
 const Main = styled.View``;
 
-const RightCircle = styled.View``;
+const RightCircle = styled.View`
+  background-color: #8022d9;
+  position: absolute;
+  widht: 400px;
+  height: 400px;
+  border-radius: 200px;
+  left: -100px;
+  top: -200px;
+`;
 
 const LeftCircle = styled.View`
   background-color: #23a6d5;
